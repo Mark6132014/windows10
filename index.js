@@ -5,6 +5,9 @@ setInterval(() => {
 var taskbar = {
     startSearch: function() {
         document.querySelector(".start").style.display = "block";
+    },
+    browser: function() {
+        document.querySelector(".ms-edge-application").style.display = "block";
     }
 }
 var startbuttons = [
@@ -19,6 +22,19 @@ for (var i = 0; i < startbuttons.length; i++) {
         taskbar.startSearch();
     });
 }
+var browser = document.querySelector(".ms-edge-application");
 setTimeout(() => {
     document.querySelector(".startup #start").style.display = "block";
 }, 3000);
+browser.querySelector("#go").addEventListener("click", () => {
+    let address = browser.querySelector("#web-address");
+    let website = browser.querySelector("#website");
+    website.src = address.value;
+});
+var music = new Audio("Sounds/music.mp3");
+document.querySelector(".start .cardMusic #play").addEventListener("click", () => {
+    music.play();
+});
+document.querySelector(".start .cardMusic #pause").addEventListener("click", () => {
+    music.pause();
+});
