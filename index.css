@@ -109,3 +109,14 @@ input, button {
     left: 0;
     z-index: 1;
 }
+.ms-edge-application {
+    background: white;
+    height: 500px;
+    width: 800px;
+    position: absolute;
+    top: 10px;
+    left: 17%;
+    color: black;
+    z-index: 1;
+    display: none;
+}
