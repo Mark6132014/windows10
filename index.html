@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Windows 10
+    </title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="Icons/windows10.png">
+</head>
+<body>
+    <span class="recycle_bin">
+        <img src="Icons/recycle_bin.png" id="desktop-icon">
+        <br>
+        <span>
+            Recycle
+            <br>
+            &ensp;&nbsp;Bin
+        </span>
+    </span>
+    <br>
+    <br>
+    <span class="get-started">
+        <img src="Icons/get-started.png" id="desktop-icon">
+        <br>
+        <span>
+            &ensp;&nbsp;Get
+            <br>
+            Started
+        </span>
+    </span>
+    <br>
+    <br>
+    <span class="my-computer">
+        <img src="Icons/my-computer.png" id="desktop-icon">
+        <br>
+        <span>
+            My Co-
+            <br>
+            mputer
+        </span>
+    </span>
+    <div class="start">
+        <img height="35" width="35" src="Images/profile.png" style="position: absolute; bottom: 10px; left: 5px;">
+        <button style="position: absolute; bottom: 45px; left: 5px; background: transparent; border: none; color: white; font-size: 2.5em;" onclick="document.querySelector('.start').style.display = 'none';">&times;</button>
+        <div style="position: absolute; top: 0; left: 40px; border: 1px solid white; height: calc(100vh - 80px - 35px); width: 170px; color: white;">
+        <p>
+            C
+        </p>
+        <hr>
+        <span>
+            Cortana
+        </span>
+        <hr>
+        <p>
+            E
+        </p>
+        <hr>
+        <span>
+            Windows Explorer
+        </span>
+        <br>
+        <span>
+            Explorer
+        </span>
+        <br>
+        <span>
+            explorer.exe
+        </span>
+        <br>
+        <span>
+            explorer.exe/danger
+        </span>
+        <hr>
+        <p>
+            M
+        </p>
+        <hr>
+        <span>
+            Microsoft Edge
+        </span>
+        <br>
+        <span>
+            Microsoft Edge 2019
+        </span>
+    </div>
+    </div>
+    <div class="taskbar">
+        <span class="startNow taskbarApp"></span>
+        <input class="search" placeholder="Search...">
+        <span class="taskview taskbarApp"></span>
+        <span class="cortana taskbarApp"></span>
+        <span class="ms-edge taskbarApp"></span>
+        <span class="ms-edge-old taskbarApp"></span>
+        <span class="explorer taskbarApp"></span>
+        <span class="time" style="position: absolute; top: -5px; right: 8px;"></span>
+    </div>
+    <div class="startup">
+        <center>
+            <br>
+            <br>
+            <br>
+            <img height="150" src="Icons/windows10.png">
+            <br>
+            <br>
+            <br>
+            <br>
+            <span style="font-size: 2.5em; color: white;">
+            Loading...
+            </span>
+            <br>
+            <br>
+            <br>
+            <button style="color: white; background: grey; border: none; font-size: 1.5em; display: none; border-radius: 5px; cursor: url('Cursors/interact.webp'), auto;" onclick="document.querySelector('.startup').style.display = 'none';" id="start">
+            Ready? Start!
+            </button>
+        </center>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
