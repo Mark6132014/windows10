@@ -8,6 +8,9 @@ var taskbar = {
     },
     browser: function() {
         document.querySelector(".ms-edge-application").style.display = "block";
+    },
+    explorer: function() {
+        document.querySelector(".file-explorer").style.display = "block";
     }
 }
 var startbuttons = [
